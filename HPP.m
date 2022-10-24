@@ -1,5 +1,5 @@
 function [x]=HPP(y,A,tolerance,maxiter,omega)
-lambda = 1e-4;
+lambda = 1e-8;% or 1e-6...1e-2...
 [~,nn]=size(A);
 v = ones(nn,1);
 
