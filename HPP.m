@@ -1,7 +1,5 @@
-function [x]=HPP(y,A,tolerance,maxiter,omega,lambda)
+function [x]=HPP(y,A,tolerance,v,maxiter,omega,lambda)
 [~,nn]=size(A);
-v = ones(nn,1);
-
 x=A\y;
 xold=zeros(nn,1);
 iter=0;
